@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
       x: function () {
         return -(mastheadWidth - window.innerWidth);
       },
-      ease: "none",
+      ease: "true",
     }),
     trigger: ".masthead",
     end: function () {
