@@ -1,0 +1,27 @@
+@use "../base/vars" as *;
+
+.masthead {
+  display: flex;
+  height: 100vh;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+.masthead__item {
+  flex-shrink: 0;
+  width: 700px;
+}
+
+.masthead__item:first-of-type {
+  background: $coral;
+}
+.masthead__item:nth-of-type(2) {
+  background: $lightgrey;
+}
+
+.masthead__item:last-of-type {
+  background: $dark;
+}
+.content {
+  height: 1500px;
+  background: $lightgrey;
+}

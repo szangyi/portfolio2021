@@ -1,0 +1,33 @@
+.nav {
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+}
+
+.some-icon {
+  width: 100px;
+  //   padding: 8px 0;
+}
+
+.some-icon img {
+  width: 1.5vw;
+  height: 1.3vw;
+}
+
+.nav-icon:first-child {
+  position: absolute;
+  left: 9px;
+  //   top: 9px;
+}
+
+#logo {
+  width: 8vw;
+}
