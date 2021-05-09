@@ -4,10 +4,7 @@ import "/style.scss";
 
 // *parallex on images
 // https://simpleparallax.com
-
 var images = document.querySelectorAll("img");
-new simpleParallax(images);
-
 new simpleParallax(images, {
   scale: 1,
 });
