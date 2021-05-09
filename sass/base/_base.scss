@@ -1,4 +1,8 @@
+@use "../base/vars" as *;
+
 body {
   background: white;
-  margin: 0 50px;
+  margin: 0 40px;
+  font-family: "Lato-regular";
+  color: $dark;
 }

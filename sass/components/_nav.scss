@@ -1,5 +1,7 @@
+@use "../base/vars" as *;
+
 .nav {
-  height: 50px;
+  height: 40px;
   background: white;
   display: flex;
   justify-content: center;
@@ -9,12 +11,12 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px 50px;
+  padding: 10px 50px 5px 50px;
 }
 
 .some-icon {
-  width: 100px;
-  //   padding: 8px 0;
+  width: 30px;
+  padding-left: 10px;
 }
 
 .some-icon img {
@@ -24,10 +26,10 @@
 
 .nav-icon:first-child {
   position: absolute;
-  left: 50px;
+  left: 0px;
   //   top: 9px;
 }
 
 #logo {
-  width: 8vw;
+  width: 6vw;
 }

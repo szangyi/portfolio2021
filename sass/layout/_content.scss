@@ -1,0 +1,16 @@
+@use "../base/vars" as *;
+
+.content h1 {
+  margin-block-start: 0px;
+  color: $coral;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+
+.pImage {
+  width: 50%;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // max-height: 900px;
+}
