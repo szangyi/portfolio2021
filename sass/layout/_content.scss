@@ -1,16 +1,31 @@
 @use "../base/vars" as *;
 
-.content h1 {
-  margin-block-start: 0px;
-  color: $coral;
-  padding-top: 0.5em;
-  padding-left: 1em;
+.content {
 }
 
-.pImage {
-  width: 50%;
-  // position: absolute;
-  // top: 0;
-  // right: 0;
-  // max-height: 900px;
+.grid-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-box {
+  padding-top: 3em;
+  padding-left: 6em;
+  order: 1;
+
+  h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: $coral;
+  }
+}
+
+.image-box {
+  order: 2;
+  position: relative;
+  img {
+    width: 80%;
+    // position: absolute;
+    // top: 50%;
+  }
 }

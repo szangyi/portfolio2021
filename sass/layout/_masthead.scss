@@ -48,12 +48,11 @@ h2 {
   font-size: 1em;
   list-style: none;
   padding-inline-start: 0px;
-}
-
-.skill-categories li {
-  color: white;
-  font-size: 1.5em;
-  line-height: 1.8em;
+  li {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.8em;
+  }
 }
 
 .masthead__item1-div {
@@ -67,24 +66,28 @@ h1 {
   line-height: 0.9em;
 }
 
-.masthead__item2-div h1 {
-  margin-left: -2.3em;
-  margin-top: 0.5em;
+.masthead__item2-div {
+  h1 {
+    margin-left: -2.3em;
+    margin-top: 0.5em;
+  }
+
+  .dot {
+    color: $yellow;
+  }
 }
 
 .dot {
   font-size: 1.2em;
 }
 
-.masthead__item2-div .dot {
-  color: $yellow;
-}
+.masthead__item3-div {
+  h1 {
+    color: $yellow;
+    margin-left: -0.5em;
+  }
 
-.masthead__item3-div h1 {
-  color: $yellow;
-  margin-left: -0.5em;
-}
-
-.masthead__item3-div .dot {
-  color: $coral;
+  .dot {
+    color: $coral;
+  }
 }
