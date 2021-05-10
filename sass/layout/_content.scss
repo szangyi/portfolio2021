@@ -1,6 +1,8 @@
 @use "../base/vars" as *;
 
 .content {
+  height: 150%;
+  background: $lightgrey;
 }
 
 .grid-project {
@@ -8,24 +10,165 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.text-box {
-  padding-top: 3em;
-  padding-left: 6em;
-  order: 1;
+.grid-project2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+.text-box,
+.text-box2 {
   h1 {
     margin-block-start: 0px;
     margin-block-end: 0px;
     color: $coral;
   }
+  h3 {
+    font-family: "Gilroy-bold";
+    font-size: 1.5em;
+
+    .dot {
+      font-size: 1.5em;
+      color: $coral;
+    }
+  }
+  .copytext {
+    color: $textcolor;
+    font-family: "Lato-reg";
+    font-size: 0.9em;
+    line-height: 2.5;
+    padding-bottom: 2em;
+  }
+  .italictext {
+    font-family: "Libre-Baskerville-italic";
+    font-size: 0.9em;
+  }
+  .linktext,
+  .linktext:visited {
+    color: $dark;
+  }
 }
 
-.image-box {
-  order: 2;
-  position: relative;
-  img {
-    width: 80%;
+.project1 {
+  .text-box {
+    padding-top: 3em;
+    padding-left: 6em;
+    order: 1;
+    margin-right: 6em;
+  }
+  .image-box {
+    position: relative;
+    order: 2;
+  }
+  .parallex-image {
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    right: 100px;
+  }
+}
+
+.project2 {
+  h1 {
+    padding-left: 1em;
+  }
+  .text-box {
+    order: 2;
+    padding-top: 8em;
+    padding-left: 7em;
+    padding-right: 6em;
+  }
+  .image-box {
+    position: relative;
+    order: 1;
+  }
+  .parallex-image {
+    width: 50%;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+  }
+}
+
+.project3 {
+  padding-top: 5em;
+  .text-box {
+    order: 2;
+  }
+  .image-box {
+    order: 1;
+  }
+  .parallex-image {
+    // width: 50%;
     // position: absolute;
-    // top: 50%;
+    // top: 55%;
+    // right: 100px;
+  }
+}
+
+.project4 {
+  .text-box {
+    text-align: end;
+  }
+  .parallex-image {
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  h1 {
+    color: $dark;
+  }
+  h3 {
+    .dot {
+      color: $yellow;
+    }
+  }
+}
+
+.project5 {
+  background: rgb(248, 248, 248);
+  background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(28, 27, 32, 1) 55%);
+  margin-top: -5em;
+  padding-top: 11em;
+  padding-bottom: 5em;
+  .text-box {
+    order: 1;
+    padding-top: 1em;
+    padding-left: 6em;
+  }
+  h1 {
+    color: $yellow;
+  }
+  h3 {
+    color: white;
+  }
+
+  .text-box2 {
+    order: 2;
+    // padding-top: 3em;
+    // padding-left: 6em;
+    margin-right: 4em;
+    .copytext {
+      color: rgb(214, 214, 214);
+    }
+  }
+  .image-box {
+    position: relative;
+    order: 3;
+    .linktext {
+      position: relative;
+      top: 80%;
+    }
+    .italictext {
+      font-family: "Libre-Baskerville-italic";
+      font-size: 0.9em;
+      color: white;
+    }
+  }
+  .parallex-image {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    right: 100px;
   }
 }
