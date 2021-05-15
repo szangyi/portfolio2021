@@ -36,6 +36,29 @@ main {
       color: $coral;
     }
   }
+
+  .contact {
+    p {
+      font-family: "Libre-Baskerville-italic";
+      font-size: 0.7em;
+      margin-bottom: 0.2em;
+    }
+    a {
+      font-size: 1.3em;
+      font-family: "Gilroy-bold";
+      line-height: 0.9em;
+      text-decoration: none;
+      color: $dark;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $coral;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
 }
 
 .bar {
