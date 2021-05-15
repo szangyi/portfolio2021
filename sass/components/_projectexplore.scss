@@ -1,0 +1,150 @@
+@use "../base/vars" as *;
+
+.sidebar-projectexplore {
+  height: 80%;
+  width: 700px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  background-color: white;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 5.5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: $coral;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.no-y-scrollbar {
+  overflow-y: hidden;
+}
+
+.bar {
+  display: block;
+  height: 3px;
+  width: 20px;
+  background-color: $dark;
+  margin: 3px auto;
+  border-radius: 100px;
+}
+
+.button-projectexplore {
+  color: $dark;
+  z-index: 3;
+  font-family: "Gilroy-bold";
+  text-transform: uppercase;
+  font-size: 12px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  position: absolute;
+}
+
+#btn-project1explore {
+  right: -65px;
+  top: 50%;
+}
+
+#btn-project2explore {
+  right: -65px;
+  top: 60%;
+}
+
+#btn-project3explore {
+  right: -65px;
+  top: 75%;
+}
+
+#btn-project4explore {
+  right: -65px;
+  top: 85%;
+}
+
+.active {
+  transition: 2s;
+}
+
+//menu icon
+.nav-right {
+  position: fixed;
+  right: 30px;
+  top: 290px;
+}
+
+.nav-right.visible-xs2 {
+  z-index: 3;
+}
+
+.hidden-xs2 {
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.nav-right.visible-xs2 .active .bar {
+  background-color: $dark;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.move-to-left {
+  -webkit-transform: translateX(-700px);
+  -moz-transform: translateX(-700px);
+  -ms-transform: translateX(-700px);
+  -o-transform: translateX(-470px);
+  transform: translateX(-700px);
+}
+
+// *project-explore-masthead*
+#sidebar-project1explore {
+  overflow: auto;
+  // width: auto;
+  height: 500px;
+  white-space: nowrap;
+
+  .masthead__item-pe:first-of-type {
+    background: blue;
+  }
+  .masthead__item-pe {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 600px;
+    background: yellow;
+  }
+}
+
+#sidebar-project2explore {
+  overflow: auto;
+  // width: auto;
+  height: 500px;
+  white-space: nowrap;
+
+  .masthead__item-pe:first-of-type {
+    background: red;
+  }
+  .masthead__item-pe {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 600px;
+    background: green;
+  }
+}
