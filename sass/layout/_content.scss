@@ -93,7 +93,7 @@
 }
 
 .project3 {
-  padding-top: 10em;
+  padding-top: 17em;
 
   h1 {
     margin-left: 1.5em;
@@ -115,7 +115,7 @@
 }
 
 .project4 {
-  padding-top: 13em;
+  padding-top: 17em;
   .text-box {
     order: 2;
     margin-left: 5em;
@@ -144,7 +144,7 @@
   background: rgb(248, 248, 248);
   background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(28, 27, 32, 1) 55%);
   margin-top: -6em;
-  padding-top: 12em;
+  padding-top: 16em;
   padding-bottom: 5em;
   .text-box {
     order: 1;
@@ -197,7 +197,7 @@
   &:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: 0;
     height: 2px;
     background-color: #6ebde7;
@@ -205,7 +205,7 @@
     display: block;
     transition: width 0.5s ease-in-out;
     background: rgba(255, 85, 75, 0.2);
-    height: 1.25em;
+    height: 0.75em;
     z-index: -1;
   }
   &:hover {
@@ -219,3 +219,12 @@
 .datalink {
   text-decoration: none !important;
 }
+
+// section {
+//   opacity: 0;
+//   transition: opacity 3s;
+// }
+
+// section.is-visible {
+//   opacity: 1;
+// }

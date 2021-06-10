@@ -58,7 +58,10 @@
 }
 
 .blink_me {
-  animation: blinker 2s ease-in infinite;
+  // animation: blinker 2s ease-in infinite;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 li {
