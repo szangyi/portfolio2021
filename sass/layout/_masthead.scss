@@ -50,10 +50,19 @@
 
 .hoverskill {
   cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hoverskill:hover {
+  opacity: 40%;
 }
 
 .blink_me {
   animation: blinker 2s ease-in infinite;
+}
+
+li {
+  width: max-content;
 }
 
 @keyframes blinker {
