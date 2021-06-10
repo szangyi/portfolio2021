@@ -32,7 +32,7 @@
 
 .hoverus {
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 16%;
   img {
     position: absolute;
@@ -75,7 +75,7 @@ li {
   right: 51%;
 }
 
-@keyframes blinker {
+@-webkit-keyframes blinker {
   50% {
     opacity: 0;
   }
