@@ -30,6 +30,38 @@
   font-family: "Gilroy-bold";
 }
 
+.hoverus {
+  position: absolute;
+  top: 75%;
+  left: 16%;
+  img {
+    position: absolute;
+    top: -1.5em;
+    width: 2em;
+    height: 2em;
+    transform: rotate(-30deg);
+  }
+  p {
+    font-size: 0.7em;
+    color: white;
+    font-family: "Gilroy-light";
+  }
+}
+
+.hoverskill {
+  cursor: pointer;
+}
+
+.blink_me {
+  animation: blinker 2s ease-in infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 h2 {
   font-size: 1.3em;
   .italictext {
