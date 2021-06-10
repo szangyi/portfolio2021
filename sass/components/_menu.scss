@@ -28,7 +28,13 @@ main {
   z-index: 1;
   left: 0;
   background-color: white;
-  padding: 5rem 5rem 2rem 8rem;
+  padding: 4rem 5rem 2rem 8rem;
+
+  .copytext {
+    line-height: 1.9;
+    width: 60%;
+    font-size: 0.8em;
+  }
 
   h2 {
     font-size: 2em;
@@ -38,6 +44,8 @@ main {
   }
 
   .contact {
+    position: absolute;
+    bottom: 15px;
     p {
       font-family: "Libre-Baskerville-italic";
       font-size: 0.7em;
@@ -58,6 +66,18 @@ main {
       text-decoration: none;
       color: $dark;
     }
+  }
+
+  .mydetails {
+    .myname {
+      font-family: "Gilroy-bold";
+      text-transform: uppercase;
+    }
+
+    font-family: "Gilroy";
+    padding-top: 5em;
+    line-height: 0.5;
+    font-size: 0.7em;
   }
 }
 

@@ -15,6 +15,11 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.copytext {
+  font-family: "Gilroy";
+  line-height: 2em;
+}
+
 .text-box,
 .text-box2 {
   h1 {
@@ -33,9 +38,7 @@
   }
   .copytext {
     color: $textcolor;
-    font-family: "Lato-reg";
     font-size: 0.9em;
-    line-height: 2.5;
     padding-bottom: 2em;
   }
   .italictext {
@@ -90,29 +93,41 @@
 }
 
 .project3 {
-  padding-top: 5em;
+  padding-top: 10em;
+
+  h1 {
+    margin-left: 1.5em;
+    margin-top: -0.1em;
+    color: $coral;
+  }
+  .text-box {
+    text-align: end;
+    margin-right: 3em;
+  }
+
+  .parallex-image {
+    width: 50%;
+    // position: absolute;
+    top: 70%;
+    left: 27%;
+    right: 9 0px !important;
+  }
+}
+
+.project4 {
+  padding-top: 13em;
   .text-box {
     order: 2;
+    margin-left: 5em;
+    margin-right: 3em;
   }
   .image-box {
     order: 1;
   }
   .parallex-image {
-    // width: 50%;
-    // position: absolute;
-    // top: 55%;
-    // right: 100px;
-  }
-}
-
-.project4 {
-  .text-box {
-    text-align: end;
-  }
-  .parallex-image {
-    width: 50%;
+    width: 20%;
     position: absolute;
-    top: 35%;
+    top: 85%;
     left: 20%;
   }
   h1 {
@@ -171,4 +186,36 @@
     top: 25%;
     right: 110px;
   }
+}
+
+////Styling hover link
+.background-slide {
+  color: #3588b4;
+  position: relative;
+  padding-bottom: 2px;
+  z-index: 3;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #6ebde7;
+    width: 0%;
+    display: block;
+    transition: width 0.5s ease-in-out;
+    background: rgba(255, 85, 75, 0.2);
+    height: 1.25em;
+    z-index: -1;
+  }
+  &:hover {
+    color: black;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.datalink {
+  text-decoration: none !important;
 }
