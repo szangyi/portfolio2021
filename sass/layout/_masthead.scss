@@ -65,6 +65,13 @@ li {
   width: max-content;
 }
 
+.scrollme {
+  font-size: 0.6em;
+  position: absolute;
+  bottom: 0;
+  right: 51%;
+}
+
 @keyframes blinker {
   50% {
     opacity: 0;
